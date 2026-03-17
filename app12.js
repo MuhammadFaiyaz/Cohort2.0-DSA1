@@ -1,33 +1,33 @@
 // check the only one unique value in the set
-// let arr = [1, 1, 1, 1, 1,3,4,5,6,7,8,1,34,4,6,7,8,9];
-// let set = new Set(arr);
-// console.log(set);
+let arr = [1, 1, 1, 1, 1,3,4,5,6,7,8,1,34,4,6,7,8,9];
+let set2 = new Set(arr);
+console.log(set2);
 
 //jewels and stones
-// let jewels = "aA";
-// let stones = "aAAbbbb";
-// let set = new Set();
-// let count = 0;
-// for (let i = 0; i < jewels.length; i++) {
-//   let ch = jewels.charAt(i);
-//   set.add(ch);
-// }
-// for (let i = 0; i < stones.length; i++) {
-//   if (set.has(stones[i])) {
-//     count++;
-//   }
-// }
-// console.log(count);
+let jewels = "aA";
+let stones = "aAAbbbb";
+let set = new Set();
+let count = 0;
+for (let i = 0; i < jewels.length; i++) {
+  let ch = jewels.charAt(i);
+  set.add(ch);
+}
+for (let i = 0; i < stones.length; i++) {
+  if (set.has(stones[i])) {
+    count++;
+  }
+}
+console.log(count);
 
 // check if a sentence is a pangram or not
-// let sentence = "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz";
-// let newSet = new Set(sentence);
-// for (const ch of newSet) {
-//   let ascii = ch.charCodeAt(0);
-//   if (ascii >= 97 && ascii <= 122) count++;
-// }
-// if (count === 26) console.log(true);
-// else console.log(false);
+let sentence = "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz";
+let newSet = new Set(sentence);
+for (const ch of newSet) {
+  let ascii = ch.charCodeAt(0);
+  if (ascii >= 97 && ascii <= 122) count++;
+}
+if (count === 26) console.log(true);
+else console.log(false);
 
 // happy num
 let n = 20;
